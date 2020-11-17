@@ -1,7 +1,7 @@
 import "reflect-metadata";
 import {createConnection, getRepository} from "typeorm";
 import * as express from "express";
-import * as cors from "cors";
+const cors = require("cors");
 import router from './router/routes';
 const app = express();
 
