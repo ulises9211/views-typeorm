@@ -12,9 +12,6 @@ export class Post {
     @Column()
     name: string;
 
-    @Column()
-    categoryId: number;
-
     @ManyToOne(() => Category)
     @JoinColumn({ name: "categoryId" })
     category: Category;
